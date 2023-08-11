@@ -48,7 +48,7 @@
 	align-items: center;
 	justify-content: space-between;
 	height: 80px;
-	padding: 0 2rem;
+	padding: 0 1rem;
 	background-color:rgba(217, 216, 220, 0.858);
 	color:black;
 }
@@ -105,8 +105,8 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color:aquamarine;
-		transition: 1s;
+		background-color:rgb(99, 99, 99);
+		transition: 0.5s;
 	}
 
 	.responsive_nav {
@@ -122,4 +122,14 @@ nav {
 	nav a {
 		font-size: 1.5rem;
 	}
+}
+
+
+
+/* home */
+
+.home{
+	text-align: center;
+	height: 100vh;
+	background-color: antiquewhite;
 }
