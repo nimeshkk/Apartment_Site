@@ -1,45 +1,40 @@
-import React from 'react'
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCrown } from '@fortawesome/free-solid-svg-icons'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { useRef } from 'react'
+import { faChessKnight } from '@fortawesome/free-solid-svg-icons'
 
-export default function navbar() {
 
-  const navRef =useRef();
+function Navbar() {
+	const navRef = useRef();
 
-  const showNavbar =()=>{
-    navRef.current.classList.add('responsive_nav');
-  }
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
 
-  return (
-    
-      <div className='navbar'>
-
-        <div className='logo'>
-          <FontAwesomeIcon icon={faCrown} />
-          </div>
-
-          <nav ref={navRef}>
-            <a href='#'>Home</a>
-            <a href='#'>About</a>
-            <a href='#'>Contact</a>
-            <a href='#'>add</a>
-
-            <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-            <FontAwesomeIcon icon={faXmark} />
-
-            </button>
-
-          </nav>
-
-          <button className='nav-btn' onClick={showNavbar}>
-          <FontAwesomeIcon icon={faBars} />
-          </button>
-      </div>
-      
-    
-  )
+	return (
+		<div className="navbar">
+			<div className="logo"><FontAwesomeIcon icon={faChessKnight} /></div>
+			<nav ref={navRef}>
+				<a href="/#">Home</a>
+				<a href="/#">My work</a>
+				<a href="/#">Blog</a>
+				<a href="/#">About me</a>
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+			</nav>
+			<button
+				className="nav-btn"
+				onClick={showNavbar}>
+				<FaBars />
+			</button>
+		</div>
+	);
 }
+
+export default Navbar;
 
