@@ -1,42 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 
 
 
@@ -44,24 +5,31 @@
 
 
 .navbar {
-	display: flex;
+	display: flex;	
 	align-items: center;
 	justify-content: space-between;
 	height: 80px;
-	padding: 0 1rem;
+	width: 100%;
+	/* padding: 0 1rem; */
 	background-color:rgba(217, 216, 220, 0.858);
 	color:black;
+	/* position: fixed; */
+	top: 0;
+
+	
 }
 .logo{
+	
   color: #000000;
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin: 5px;
 }
 
 nav a {
-	margin: 0 1rem;
+	margin: 1rem;
 	color:black;
 	text-decoration: none;
 }
@@ -129,7 +97,47 @@ nav {
 /* home */
 
 .home{
+	width: 100%;
 	text-align: center;
 	height: 100vh;
-	background-color: antiquewhite;
+	background-color: rgb(173, 171, 168);
 }
+ .homeContainer{
+	height: 100%;
+	
+ }
+
+ .homeDescription{
+	width: 600px;
+	position: absolute;
+	z-index: 999;
+	color: aliceblue;
+	top: 20%;
+	left: 5%;
+ }
+ .home-carosel{
+	
+	display: flex;
+	top: 20%;
+	left: 4%;
+	
+	
+ }
+ .home-carosel span{
+	width:45px;
+	height: 12px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	margin: 0.5rem;
+	cursor: pointer;
+	
+ }
+ .homeOverlay{
+	position: absolute;
+	top: 90px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-image:linear-gradient(to right,rgba(0, 0, 0, 0.664) 5%,rgba(255, 255, 255, 0) ) 
+
+ }

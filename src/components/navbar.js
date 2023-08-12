@@ -14,6 +14,7 @@ function Navbar() {
 	};
 
 	return (
+		
 		<div className="navbar">
 			<div className="logo"><FontAwesomeIcon icon={faChessKnight} /></div>
 			<nav ref={navRef}>
@@ -21,17 +22,17 @@ function Navbar() {
 				<a href="/#">My work</a>
 				<a href="/#">Blog</a>
 				<a href="/#">About me</a>
-				<button
+				<div
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
 					<FaTimes />
-				</button>
+				</div>
 			</nav>
-			<button
+			<div
 				className="nav-btn"
 				onClick={showNavbar}>
 				<FaBars />
-			</button>
+			</div>
 		</div>
 	);
 }
