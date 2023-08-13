@@ -1,7 +1,8 @@
 import React from 'react'
 import './App.css'
-import Navbar from './components/navbar'
+import Navbar from './components/navbar/navbar'
 import Home from './components/home/home'
+import Describe from './components/describe/describe'
 
 
 export default function App() {
@@ -9,7 +10,8 @@ export default function App() {
     <div>
 
       <Navbar />
-      <Home />        
+      <Home />
+      <Describe/>        
       
     </div>
   )

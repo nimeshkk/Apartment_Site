@@ -125,15 +125,14 @@ nav {
  }
 
  .homeDescription{
-	position: relative;
+	position:absolute;
 	width: 600px;
-	position:fixed;
 	color: rgb(0, 0, 0);
 	top: 80%;
 	left: 0%;
-	width: 100%;
+	width: 90%;
 	padding-left: 10px;
-	background-color: rgba(254, 254, 254, 0.559);
+	background-image:linear-gradient(to right,rgba(255, 255, 255, 0.664) 1%,rgba(255, 255, 255, 0)99% ); 
  }
  .home-carosel{
 	
@@ -162,15 +161,14 @@ nav {
  @media only screen and (max-width: 1024px) {
 	
 	.homeDescription{
-		position: relative;
+		position:absolute;
 		width: 600px;
-		position:fixed;
-		color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
 		top: 80%;
 		left: 0%;
-		width: 100%;
+		width: 90%;
 		padding-left: 10px;
-		background-color: rgba(173, 173, 173, 0.648);
+		background-image:linear-gradient(to right,rgba(255, 255, 255, 0.664) 1%,rgba(255, 255, 255, 0)99% ); 
 	 }
 	 .home-carosel{
 		
@@ -198,3 +196,47 @@ nav {
 	
 	 } */
  }
+
+
+ /* describe */
+
+ .describe-container{
+	
+	 height: 100vh;
+	 background-color: rgb(217, 216, 220);
+	 display: flex;
+	 justify-content: center;
+	 align-items: left;
+	 flex-direction: column;
+	 padding: 0 8rem;
+	 color: rgb(0, 0, 0);
+ }
+
+ 
+ .section-title{
+	 font-size: 2rem;
+	 font-weight: 600;
+	 text-transform: uppercase;
+	 letter-spacing: 1px;
+	
+ }
+ .section-grid{
+	 display: grid;
+	 grid-template-columns: repeat(3, 1fr);
+	 gap: 1.5rem;
+	 margin: 1rem 0;
+ }
+.section-number{
+	font-size: 20px;
+	font-weight: 400;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 50px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(39, 39, 39);
+	border-radius: 40%;
+	
+}
+
+
