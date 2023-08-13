@@ -1,13 +1,18 @@
 import React from 'react'
+import jpg1 from '../../images/1.jpg'
+import jpg2 from '../../images/2.jpg'
+import jpg3 from '../../images/3.jpg'
 
 export default function describe() {
   return (
     <div className='describe-container'>
-      <div className='section-container'>
-        <div className='section-title'>
 
-          <h3>asdadaf</h3>
-          </div>
+      <div className='section-title'>
+
+           <h3>asdadaf</h3>
+           </div>
+       <div className='section-container-grid'>
+        
 
           <div className='section-grid'>
             <div className='text-grid'>
@@ -30,8 +35,17 @@ export default function describe() {
               </div>
             </div>
           </div>
+
+        <div className='describe-images-grid'>
+        <img className='describeImages' src={jpg1}></img>
+        <img className='describeImages' src={jpg2}></img>
+        <img className='describeImages' src={jpg3}></img>
+       </div>
+    
+       
       </div>
       
     </div>
+    
   )
 }

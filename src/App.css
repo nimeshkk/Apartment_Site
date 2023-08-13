@@ -199,10 +199,12 @@ nav {
 
 
  /* describe */
-
- .describe-container{
+.describe-container{
+	height: 100vh;
+}
+ .section-container{
 	
-	 height: 100vh;
+	
 	 background-color: rgb(217, 216, 220);
 	 display: flex;
 	 justify-content: center;
@@ -214,10 +216,13 @@ nav {
 
  
  .section-title{
+	
 	 font-size: 2rem;
 	 font-weight: 600;
 	 text-transform: uppercase;
 	 letter-spacing: 1px;
+	 margin: 2rem 4rem;
+	 padding-top: 12px;
 	
  }
  .section-grid{
@@ -238,5 +243,135 @@ nav {
 	border-radius: 40%;
 	
 }
+.describe-images-grid{
+	
+	display: flex;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 0.5rem;
+	align-items: right;
+	flex-direction: row;
+		
+	
+}
+.singleInfo{
 
+	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+}
+.section-container-grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+	margin: 5rem 5rem;
+	
+}
+.describeImages{
+	width: 250px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 10px;
+}
 
+@media only screen and (max-width: 1150px){
+	.section-container-grid{
+		display: column;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+		margin: 5rem 5rem;
+		
+	}
+	.describe-images-grid{
+	
+		display: flex;
+		grid-template-rows: repeat(3, 1fr);
+		gap: 0.5rem;
+		align-items: right;
+		flex-direction: column;
+			
+		
+	}
+	.describeImages{
+		width: 200px;
+		height: 100px;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+}
+
+@media only screen and (max-width: 1080px){
+	.section-container-grid{
+		display: column;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+		margin: 5rem 5rem;
+		
+	}
+	.describe-images-grid{
+	
+		display: flex;
+		grid-template-rows: repeat(3, 1fr);
+		gap: 0.5rem;
+		align-items: right;
+		flex-direction: column;
+			
+		
+	}
+	.describeImages{
+		width: 220px;
+		height: 120px;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.section-title{
+	
+		font-size: 1.2rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 2rem 4rem;
+		padding-top: 12px;
+	   
+	}
+	.section-number{
+		font-size: 10px;
+		font-weight: 300;
+		padding: 7px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 50px;
+		color: rgb(255, 255, 255);
+		background-color: rgb(39, 39, 39);
+		border-radius: 40%;
+		
+	}
+	.section-container-grid{
+		display:column;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.005rem;
+		margin: 2rem 1.5rem;
+		
+	}
+	.describe-images-grid{
+	
+		display:flex;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.5rem;
+		align-items: right;
+		flex-direction: column;
+			
+		
+	}
+	.describeImages{
+		width: 100px;
+		height: 70px;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+}
