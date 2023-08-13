@@ -8,13 +8,14 @@
 	display: flex;	
 	align-items: center;
 	justify-content: space-between;
-	height: 80px;
+	height: 15vh;
 	width: 100%;
 	/* padding: 0 1rem; */
-	background-color:rgba(217, 216, 220, 0.858);
+	background-color:rgb(217, 216, 220);
 	color:black;
 	/* position: fixed; */
 	top: 0;
+	
 
 	
 }
@@ -29,7 +30,7 @@
 }
 
 nav a {
-	margin: 1rem;
+	padding: 10px;
 	color:black;
 	text-decoration: none;
 }
@@ -60,36 +61,52 @@ nav {
 	.nav-btn {
 		visibility: visible;
 		opacity: 1;
+
+
+	
 	}
 
 	nav {
 		position: fixed;
-		top: -100vh;
-		left: 0;
-		height: 100%;
-		width: 100%;
+		top: -99vh;
+		right: 0;
+		height: 50%;
+		width: 50%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 1.5rem;
-		background-color:rgb(99, 99, 99);
+		gap: 0.4rem;
+		background-color:rgb(217, 216, 220);
 		transition: 0.5s;
+        cursor: pointer;
+		
+		 
 	}
 
 	.responsive_nav {
 		transform: translateY(100vh);
+
+		
 	}
 
 	nav .nav-close-btn {
 		position: absolute;
-		top: 2rem;
-		right: 2rem;
+		top: 1.5rem;
+		right: 1rem;
 	}
 
 	nav a {
 		font-size: 1.5rem;
 	}
+
+	nav a:hover {
+		color:rgb(28, 186, 131);
+	}
+
+	
+
+	
 }
 
 
@@ -100,7 +117,7 @@ nav {
 	width: 100%;
 	text-align: center;
 	height: 100vh;
-	background-color: rgb(173, 171, 168);
+	
 }
  .homeContainer{
 	height: 100%;
@@ -108,22 +125,24 @@ nav {
  }
 
  .homeDescription{
+	position: relative;
 	width: 600px;
-	position: absolute;
-	z-index: 999;
-	color: aliceblue;
-	top: 20%;
-	left: 5%;
+	position:fixed;
+	color: rgb(0, 0, 0);
+	top: 80%;
+	left: 0%;
+	width: 100%;
+	padding-left: 10px;
+	background-color: rgba(254, 254, 254, 0.559);
  }
  .home-carosel{
 	
 	display: flex;
 	top: 20%;
-	left: 4%;
-	
+		
 	
  }
- .home-carosel span{
+ /* .home-carosel span{
 	width:45px;
 	height: 12px;
 	background-color: rgb(255, 255, 255);
@@ -131,13 +150,51 @@ nav {
 	margin: 0.5rem;
 	cursor: pointer;
 	
- }
- .homeOverlay{
+ } */
+ /* .homeOverlay{
 	position: absolute;
-	top: 90px;
-	left: 0;
+	top: 80px;
 	width: 100%;
 	height: 100vh;
-	background-image:linear-gradient(to right,rgba(0, 0, 0, 0.664) 5%,rgba(255, 255, 255, 0) ) 
+	background-image:linear-gradient(to right,rgba(0, 0, 0, 0.664) 1%,rgba(255, 255, 255, 0)99% ); 
 
+ } */
+ @media only screen and (max-width: 1024px) {
+	
+	.homeDescription{
+		position: relative;
+		width: 600px;
+		position:fixed;
+		color: rgb(255, 255, 255);
+		top: 80%;
+		left: 0%;
+		width: 100%;
+		padding-left: 10px;
+		background-color: rgba(173, 173, 173, 0.648);
+	 }
+	 .home-carosel{
+		
+		display: flex;
+		top: 20%;
+		
+		
+		
+	 }
+	 /* .home-carosel span{
+		width:45px;
+		height: 12px;
+		background-color: rgb(255, 255, 255);
+		border-radius: 10px;
+		margin: 0.5rem;
+		cursor: pointer;
+		
+	 } */
+	 /* .homeOverlay{
+		position: absolute;
+		top: 80px;
+		width: 100%;
+		height: 100vh;
+		background-image:linear-gradient(to right,rgba(0, 0, 0, 0.664) 5%,rgba(255, 255, 255, 0)95% ) 
+	
+	 } */
  }

@@ -15,7 +15,7 @@ export default function Home() {
     backgroundImage: `url(${imageSlide[currentState].url})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '100vh',
+    height: '85vh',
   };
 
   const goToNext = (currentState) => {
@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className='homeContainer'>
       <div style={bgImageStyle}></div>
-      <div className='homeOverlay'></div>
+      {/* <div className='homeOverlay'></div> */}
       <div className='homeDescription'>
         <div>
         <h1>{imageSlide[currentState].title}</h1>
@@ -36,7 +36,8 @@ export default function Home() {
           imageSlide.map((imageSlide, currentState) => (
             <span key={currentState} onClick={()=>goToNext(currentState)}></span>
             
-          ))
+          )
+          )
         }
        </div>
        </div>
