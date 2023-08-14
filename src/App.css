@@ -198,6 +198,7 @@ nav {
  }
 
 
+
  /* describe */
 .describe-container{
 	height: 100vh;
@@ -375,3 +376,19 @@ nav {
 		border-radius: 10px;
 	}
 }
+
+
+
+/* scroll */
+ 
+.hidden{
+	opacity: 0;
+	transform: translatex(-100%);
+	transition: all 1.5s;
+}
+.show{
+	opacity: 1;
+	transform: translatex(0);
+}
+
+/* scroll end */
