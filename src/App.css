@@ -276,6 +276,10 @@ nav {
 	object-fit: cover;
 	border-radius: 10px;
 }
+.describeImages:hover{
+	transform: scale(1.5);
+	transition: all 0.5s ease-in-out;
+}
 
 @media only screen and (max-width: 1150px){
 	.section-container-grid{
@@ -392,3 +396,57 @@ nav {
 }
 
 /* scroll end */
+
+
+/* info */
+
+.info-section{
+	height: 100vh;
+	background-color: rgb(217, 216, 220);
+	display: flex;
+	align-items: center;
+	
+}
+
+.info-container{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+}
+
+
+.cardinfo-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	background-color: rgb(255, 255, 255);
+	border-radius: 20%;
+	width: 350px;
+	height: 350px;
+
+}
+
+.singleCard-grid{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.infoIcon{
+	font-size: 3rem;
+	color: rgb(0, 0, 0);
+}
+.cardTitle{
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 2rem 4rem;
+	padding-top: 12px;
+	
+
+}
