@@ -400,53 +400,90 @@ nav {
 
 /* info */
 
-.info-section{
+.info-section {
 	height: 100vh;
-	background-color: rgb(217, 216, 220);
-	display: flex;
 	align-items: center;
-	
-}
-
-.info-container{
-	display: flex;
-	align-items: center;
-	flex-direction: row;
 	justify-content: center;
-	gap: 10px;
-}
+	background-color: rgb(222, 222, 222);
 
-
-.cardinfo-grid{
+  }
+  
+  .info-container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2rem;
-	background-color: rgb(255, 255, 255);
-	border-radius: 20%;
-	width: 350px;
-	height: 350px;
-
-}
-
-.singleCard-grid{
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 40px;
+	padding: 12rem 5rem;
+	
+  }
+  
+  .cardinfo-grid {
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	
+	
+	
+  }
+  
+  .singleCard-grid {
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	gap: 10px;
 	text-align: center;
-}
+	height: 180px;
+  }
+  
+  .infoIcon {
+	font-size: 36px;
+	color: #3498db;
+  }
+  
+  .cardTitle {
+	font-size: 18px;
+	font-weight: bold;
+  }
+  
+  .cardContent {
+	flex: 1;
+  }
 
-.infoIcon{
-	font-size: 3rem;
-	color: rgb(0, 0, 0);
-}
-.cardTitle{
-	font-size: 1.5rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin: 2rem 4rem;
-	padding-top: 12px;
-	
-
-}
+  .infoIcon {
+	transition: transform 0.3s ease-in-out;
+  }
+  
+  .infoIcon:hover {
+	transform: scale(1.1);
+  }
+  
+  .cardinfo-grid {
+	background: linear-gradient(to bottom right, #f0f0f0, #dcdcdc);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .singleCard-grid {
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .singleCard-grid:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media screen and (max-width: 768px) {
+	.info-container {
+	  grid-template-columns: repeat(1, 1fr); 
+	  gap: 20px; 
+	  padding: 1rem 2rem; 
+	}
+  
+	.singleCard-grid {
+	  gap: 10px;
+	  height: auto; 
+	}
+  }
+  

@@ -12,8 +12,9 @@ export default function info() {
             <div className='infoIcon'>
             <FontAwesomeIcon icon={faHouse} />
             </div>
+            
             <span className='cardTitle'>dfsfsdfsd</span>
-            <p>jhcajhajhgsdjahdjjhvjhzcv</p>
+            <p>jhcajhavkhtdht</p>
         </div>
       </div>
 
@@ -23,7 +24,7 @@ export default function info() {
             <FontAwesomeIcon icon={faHouse} />
             </div>
             <span className='cardTitle'>dfsfsdfsd</span>
-            <p>jhcajhajhgsdjahdjjhvjhzcv</p>
+            <p >jhcajhajhgsdjahdjjhvjhzcv</p>
         </div>
       </div>
 
