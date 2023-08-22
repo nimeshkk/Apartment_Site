@@ -500,3 +500,55 @@ nav {
 	opacity: 1;
 	
 }
+
+/* footer css */
+
+.footer-grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	background-color: #333;
+	color: #fff;
+	padding: 40px;
+  }
+  
+  .footer-grid-item {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .footer-logo img {
+	width: 100px;
+	height: auto;
+  }
+  
+  .social-icon-footer {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+	
+  }
+  
+  .footerLinks {
+	list-style: none;
+  }
+  
+  .footerLinks span {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  .footerLinks li {
+	margin-bottom: 5px;
+  }
+  
+  .footerLinks a {
+	text-decoration: none;
+	color: #fff;
+	transition: color 0.3s ease;
+  }
+  
+  .footerLinks a:hover {
+	color: #00d486;
+  }
