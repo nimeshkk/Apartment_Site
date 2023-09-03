@@ -11,7 +11,7 @@ export default function footer() {
             <div className='footer-logo'>
                 <img src={logo} alt='logo' />
             </div>
-            <p>hfjfjfjffjvjhv</p>
+            <p>hfjfjfjhv</p>
             <div className='social-icon-footer'>
             <FaFacebook/>
             <FaInstagram/>
