@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import jpg1 from '../../images/1.jpg';
-import jpg2 from '../../images/2.jpg';
-import jpg3 from '../../images/3.jpg';
+import jpg1 from '../../images/swimming-pool.jpg';
+import jpg2 from '../../images/Gym.jpg';
+import jpg3 from '../../images/carp.webp';
 
 
 export default function Describe() {
@@ -28,27 +28,28 @@ export default function Describe() {
     <div className='hidden'>
       <div className='describe-container'>
         <div className='section-title'>
-          <h3>asdadaf</h3>
+          <h3>Facilities In Our Apartment</h3>
         </div>
         <div className='section-container-grid'>
           <div className='section-grid'>
             <div className='text-grid'>
             <div className='singleInfo'>
                 <span className='section-number'>1</span>
-                <h3>asdasdasd</h3>
-                <p>hdbabfkajbkbfkajfbkajbfkja</p>
+                <h3>Swimming pool</h3>
+                <p>available for all members</p>
+                
               </div>
 
               <div className='singleInfo'>
                 <span className='section-number'>2</span>
-                <h3>asdasdasd</h3>
-                <p>hdbabfkajbkbfkajfbkajbfkja</p>
+                <h3>Gym</h3>
+                <p>available for all members</p>
               </div>
 
               <div className='singleInfo'>
                 <span className='section-number'>3</span>
-                <h3>asdasdasd</h3>
-                <p>hdbabfkajbkbfkajfbkajbfkja</p>
+                <h3>Parking</h3>
+                <p>available for all members</p>
               </div>
               
             </div>
