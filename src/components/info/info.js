@@ -51,7 +51,7 @@ export default function Info() {
               <FontAwesomeIcon icon={faHouse} />
             </div>
             <span className='cardTitle'>dfsfsdfsd</span>
-            <p>jhcajhajhjkjbkujhzcv</p>
+            <p>jhcajhajhjrerextxujhzcv</p>
           </div>
         </div>
       </div>
