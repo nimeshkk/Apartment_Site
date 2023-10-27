@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../images/Afooter.png';
-import { FaAddressBook, FaAmilia, FaFacebook, FaGithub, FaInstagram, FaMailBulk, FaPhone, FaTwitter } from 'react-icons/fa';
+import { FaAddressBook,  FaFacebook, FaGithub, FaInstagram, FaMailBulk, FaPhone, FaTwitter } from 'react-icons/fa';
 
 
 

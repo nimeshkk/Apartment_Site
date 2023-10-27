@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import { FaBars, FaBuilding, FaDragon, FaDrawPolygon, FaHome, FaHorse, FaPhoenixFramework, FaReact, FaTimes } from "react-icons/fa";
+import { FaBars,  FaTimes } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChessKnight, faDragon, faHouse } from '@fortawesome/free-solid-svg-icons'
+import {  faDragon,  } from '@fortawesome/free-solid-svg-icons'
 
 
 function Navbar() {

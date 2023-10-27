@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faMedkit, faTrophy } from '@fortawesome/free-solid-svg-icons';
-import { FaPlaystation, FaTrophy, FaTypo3 } from 'react-icons/fa';
+
 
 export default function Info() { 
   useEffect(() => {
