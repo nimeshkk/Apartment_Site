@@ -404,7 +404,7 @@ nav {
 	height: 100vh;
 	align-items: center;
 	justify-content: center;
-    background-image: url('images/1.jpg');
+    background-image: url('images/cozy.jpg');
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -494,7 +494,7 @@ nav {
   
   .show2{
 	opacity: 0;
-	transition: all 1.5s;
+	transition: all 7s;
 }
 .view{
 	opacity: 1;
@@ -510,27 +510,31 @@ nav {
 	background-color: #333;
 	color: #fff;
 	padding: 40px;
+	height: 40vh;
   }
   
   .footer-grid-item {
 	display: flex;
 	flex-direction: column;
+	gap: 10px;
   }
   
   .footer-logo img {
-	width: 100px;
+	width: 150px;
 	height: auto;
   }
   
   .social-icon-footer {
 	display: flex;
-	gap: 10px;
+	gap: 12px;
 	margin-top: 20px;
 	
   }
   
   .footerLinks {
 	list-style: none;
+	
+	
   }
   
   .footerLinks span {
@@ -541,6 +545,8 @@ nav {
   
   .footerLinks li {
 	margin-bottom: 5px;
+	padding: 5px;
+	
   }
   
   .footerLinks a {

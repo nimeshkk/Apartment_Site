@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faMedkit, faTrophy } from '@fortawesome/free-solid-svg-icons';
+import { FaPlaystation, FaTrophy, FaTypo3 } from 'react-icons/fa';
 
 export default function Info() { 
   useEffect(() => {
@@ -23,35 +24,35 @@ export default function Info() {
   }, []);
 
   return (
-    <div className='info-section'>
+    <div className='info-section' id='info'>
       <div className='info-container show2'>
         <div className='cardinfo-grid'>
           <div className='singleCard-grid '>
             <div className='infoIcon'>
               <FontAwesomeIcon icon={faHouse} />
             </div>
-            <span className='cardTitle'>dfsfsdsd</span>
-            <p>jhcajhavkhtdht</p>
+            <span className='cardTitle'>Luxury</span>
+            <p>Luxury facility</p>
           </div>
         </div>
 
         <div className='cardinfo-grid'>
           <div className='singleCard-grid'>
             <div className='infoIcon'>
-              <FontAwesomeIcon icon={faHouse} />
+              <FontAwesomeIcon icon={faMedkit} />
             </div>
-            <span className='cardTitle'>dfsfsdfsd</span>
-            <p>jhcajhajhgsdjkjllllllpjjhhzcv</p>
+            <span className='cardTitle'>Medical</span>
+            <p>Free Medical facility</p>
           </div>
         </div>
 
         <div className='cardinfo-grid'>
           <div className='singleCard-grid '>
             <div className='infoIcon'>
-              <FontAwesomeIcon icon={faHouse} />
+              <FontAwesomeIcon icon={faTrophy} />
             </div>
-            <span className='cardTitle'>dfsaadfsd</span>
-            <p>jhcajhajhjrertxujhzcv</p>
+            <span className='cardTitle'>Top Rank</span>
+            <p>This is Top Ranking Apartment</p>
           </div>
         </div>
       </div>

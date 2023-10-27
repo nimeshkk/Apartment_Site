@@ -1,17 +1,17 @@
 import React from 'react'
 import logo from '../../images/Afooter.png';
-import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaAddressBook, FaAmilia, FaFacebook, FaGithub, FaInstagram, FaMailBulk, FaPhone, FaTwitter } from 'react-icons/fa';
 
 
 
 export default function footer() {
   return (
-    <div className='footer-grid-container'>
+    <div className='footer-grid-container' id='footer'>
         <div className='footer-grid-item'>
             <div className='footer-logo'>
                 <img src={logo} alt='logo' />
             </div>
-            <p>hfjfjswjhv</p>
+            <p>Apartment Site</p>
             <div className='social-icon-footer'>
             <FaFacebook/>
             <FaInstagram/>
@@ -21,49 +21,38 @@ export default function footer() {
             </div>
 
         <div className='footerLinks'>
-            <span>information</span>
+            <span>ABOUT US</span>
 
             <li>
-                <a href='/#'>About me</a>
+                <h5>committed to delivering a high level of expertise, customer service, and attention to detail to the marketing and sales of luxury real estate, and rental properties. We offer the best apartments on the Island. The site and our specialized service will support you to find the best apartments and properties for your requirement.</h5>
             </li>
 
-            <li>
-                <a href='/#'>My work</a>
-            </li>
 
-            <li>
-                <a href='/#'>Blog</a>
-            </li>
-
-            <li>
-                <a href='/#'>Contact</a>
-            </li>
+            
 
         </div>
 
         <div className='footerLinks'>
-            <span>information2</span>
+            <span>Contact Us</span>
 
             <li>
-                <a href='/#'>About me</a>
+                <h5> <FaAddressBook/> Apartment,Colombo,SriLanka</h5>
             </li>
 
             <li>
-                <a href='/#'>My work</a>
+                <h5> <FaPhone/> +94 77 123 4567</h5>
             </li>
 
             <li>
-                <a href='/#'>Blog</a>
+                <h5> <FaMailBulk/> apartment@gmail.com</h5>
             </li>
 
-            <li>
-                <a href='/#'>Contact</a>
-            </li>
+            
 
         </div>
 
         <div className='footerLinks'>
-            <span>information3</span>
+            <span>Information</span>
 
             <li>
                 <a href='/#'>About me</a>
@@ -82,6 +71,8 @@ export default function footer() {
             </li>
 
         </div>
+
+       
  
     </div>
   )

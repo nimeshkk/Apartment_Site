@@ -25,7 +25,7 @@ export default function Describe() {
     };
   }, []);
   return (
-    <div className='hidden'>
+    <div className='hidden' id='fasilities'>
       <div className='describe-container'>
         <div className='section-title'>
           <h3>Facilities In Our Apartment</h3>
