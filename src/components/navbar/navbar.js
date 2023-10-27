@@ -19,9 +19,9 @@ function Navbar() {
 			<div className="logo"><FontAwesomeIcon icon={faDragon} /></div>
 			<nav ref={navRef}>
 				<a href="/#">Home</a>
-				<a href="/#">Facilities</a>
-				<a href="/#">Info</a>
-				<a href="/#">About</a>
+				<a href="#fasilities">Facilities</a>
+				<a href="#info">Info</a>
+				<a href="#footer">About</a>
 				<div
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
